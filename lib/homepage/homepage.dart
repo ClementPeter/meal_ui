@@ -12,7 +12,19 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: customAppBar(),
+      body: ListView(
+        children: const [
+          SizedBox(
+            height: 40,
+          ),
+
+          // const SizedBox(height: 40,),
+
+          // const SizedBox(height: 40,),
+        ],
+      ),
     );
   }
 }

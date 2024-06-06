@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-AppBar CustomAppBar() {
+AppBar customAppBar() {
   return AppBar(
     title: const Text(
       'Breakfast',
