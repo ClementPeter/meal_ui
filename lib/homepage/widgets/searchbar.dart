@@ -48,8 +48,9 @@ Container customSearchBar() {
           ),
         ),
         border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15),
-            borderSide: BorderSide.none),
+          borderRadius: BorderRadius.circular(15),
+          borderSide: BorderSide.none,
+        ),
       ),
     ),
   );

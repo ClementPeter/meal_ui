@@ -15,12 +15,14 @@ AppBar customAppBar() {
     elevation: 0.0,
     centerTitle: true,
     leading: GestureDetector(
-      onTap: () {},
+      onTap: () {
+        debugPrint('back button');
+      },
       child: Container(
         margin: const EdgeInsets.all(10),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: const Color(0xFFD8D9D9),
+          color: const Color(0xFFEAEAEA),
           borderRadius: BorderRadius.circular(10),
         ),
         child: SvgPicture.asset(
@@ -32,12 +34,15 @@ AppBar customAppBar() {
     ),
     actions: [
       GestureDetector(
+        onTap: () {
+          debugPrint('more button');
+        },
         child: Container(
-          width: 25,
+          width: 30,
           margin: const EdgeInsets.all(10),
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color: const Color(0xFFD8D9D9),
+            color: const Color(0xFFEAEAEA),
             borderRadius: BorderRadius.circular(10),
           ),
           child: SvgPicture.asset(
