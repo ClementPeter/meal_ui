@@ -70,43 +70,39 @@ Column recommendDietSection(List<RecommendedDietModel> diets) {
                       ),
                     ],
                   ),
-                  InkWell(
-                    onTap: () {
-                      debugPrint('view button');
-                    },
-                    child: Container(
-                      height: 45,
-                      width: 130,
-                      decoration: BoxDecoration(
+                  Container(
+                    height: 45,
+                    width: 130,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      gradient: diets[index].viewIsSelected!
+                          ? LinearGradient(
+                              colors: [
+                                diets[index].viewIsSelected!
+                                    ? const Color(0xff9DCEFF)
+                                    : Colors.transparent,
+                                diets[index].viewIsSelected!
+                                    ? const Color(0xff92A3FD)
+                                    : Colors.transparent
+                              ],
+                            )
+                          : null,
+                    ),
+                    child: Material(
+                      borderRadius: BorderRadius.circular(100),
+                      color: Colors.transparent,
+                      child: InkWell(
+                        onTap: () {},
                         borderRadius: BorderRadius.circular(100),
-                        gradient: diets[index].viewIsSelected!
-                            ? LinearGradient(
-                                colors: [
-                                  diets[index].viewIsSelected!
-                                      ? const Color(0xff9DCEFF)
-                                      : Colors.transparent,
-                                  diets[index].viewIsSelected!
-                                      ? const Color(0xff92A3FD)
-                                      : Colors.transparent
-                                ],
-                              )
-                            : null,
-                      ),
-                      child: Material(
-                        borderRadius: BorderRadius.circular(100),
-                        color: Colors.transparent,
-                        child: InkWell(
-                          borderRadius: BorderRadius.circular(100),
-                          child: Center(
-                            child: Text(
-                              'View',
-                              style: TextStyle(
-                                  color: diets[index].viewIsSelected!
-                                      ? Colors.white
-                                      : const Color(0xffC58BF2),
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w400),
-                            ),
+                        child: Center(
+                          child: Text(
+                            'View',
+                            style: TextStyle(
+                                color: diets[index].viewIsSelected!
+                                    ? Colors.white
+                                    : const Color(0xffC58BF2),
+                                fontSize: 13,
+                                fontWeight: FontWeight.w400),
                           ),
                         ),
                       ),
