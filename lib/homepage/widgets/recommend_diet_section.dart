@@ -98,11 +98,12 @@ Column recommendDietSection(List<RecommendedDietModel> diets) {
                           child: Text(
                             'View',
                             style: TextStyle(
-                                color: diets[index].viewIsSelected!
-                                    ? Colors.white
-                                    : const Color(0xffC58BF2),
-                                fontSize: 13,
-                                fontWeight: FontWeight.w400),
+                              color: diets[index].viewIsSelected!
+                                  ? Colors.white
+                                  : const Color(0xffC58BF2),
+                              fontSize: 13,
+                              fontWeight: FontWeight.w400,
+                            ),
                           ),
                         ),
                       ),
