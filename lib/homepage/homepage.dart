@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:meals_ui/homepage/widgets/app_bar.dart';
 import 'package:meals_ui/homepage/widgets/category_section.dart';
 import 'package:meals_ui/homepage/widgets/recommend_diet_section.dart';
